@@ -1,6 +1,6 @@
 # Personal project «Soling»
 
-* Student: []().
+* Student: [Richard Petrik](https://github.com/RiverParsey).
 * Mentor: [Yevhenii Pipa](https://github.com/Pipuss).
 ---
 

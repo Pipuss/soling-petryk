@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Regular.woff2),
+   url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Light.woff2)
+   url(../fonts/OpenSans-Light.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.woff2)
+   url(../fonts/Roboto-Light.woff);
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-gray: #dddddd;
+}
+
+/* Global */
+
+body {
+  min-width: 1600px;
+  font-family: "OpenSans", "Arial" sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #696969;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* Header */
+
+.main-nav-list {
+  list-style: none;
+}
+
+.main-nav-list-item  a{
+  color: var(--basic-black);
+}
+
+/* Main Gallery */
+
+
+/* Promo */
+
+.promo-top-title {
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.promo-top-subtitle {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.promo-bottom-title {
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.promo-bottom-subtitle {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* Benefits */
+
+.benefits {
+  background-image: url(../img/main_page/benefits_city_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+}
+
+.benefits-list-item {
+  list-style: none;
+}
+
+.benefits-title {
+  font-size: 80px;
+  line-height: 109px;
+}
+
+.benefits-subtitle {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+
+/* Brands */
+
+.brands-title {
+  font-size: 35px;
+  line-height: 48px;
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+}
+
+.footer-social-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-social-phone {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-social-inst {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer-legal-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-legal-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-legal-acc-number {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.5;
+}
+
+/* Main Page end */
+
+.perfumes-catalog-title {
+  font-size: 35px;
+  line-height: 48px;
+}
+
+/* Catalog Page end */
+
+.bois-brand-title {
+  font-size: 35px;
+  line-height: 48px;
+}
+
+/* Bois Page end */
+
+.contacts-form-title {
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 450px;
+  height: 50px;
+}
+
+.contacts-map {
+  width: 100%;
+}

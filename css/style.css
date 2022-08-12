@@ -32,8 +32,9 @@
 
 /* Global */
 
-body {
+.page-body {
   min-width: 1600px;
+  margin: 0 auto;
   font-family: "OpenSans", "Arial" sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -42,8 +43,15 @@ body {
   background-color: var(--basic-white);
 }
 
+.container {
+  width: 1168px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 img {
@@ -62,39 +70,100 @@ img {
   display: none;
 }
 
+.label {
+  display: none;
+}
+
 /* Header */
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 66px;
   list-style: none;
 }
 
-.main-nav-list-item  a{
+.main-nav-list-item  a {
+  margin-right: 30px;
   color: var(--basic-black);
+}
+
+.main-nav-list-item:last-child {
+  margin-right: 0;
 }
 
 /* Main Gallery */
 
 
+
 /* Promo */
 
+.promo {
+  width: 1146px;
+  margin: 78px auto 47px auto;
+}
+
+.promo-top {
+  display: grid;
+  grid-template-columns: 331px 373px 300px;
+  grid-template-rows: 250px;
+  margin-bottom: 64px;
+}
+
 .promo-top-title {
+  margin-right: 60px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   font-size: 35px;
   line-height: 48px;
+  margin-right: 60px;
 }
 
 .promo-top-subtitle {
+  margin-right: 73px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   font-size: 14px;
   line-height: 19px;
+}
+
+.promo-top-pic {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.promo-bottom {
+  display: grid;
+  grid-template-columns: 331px 373px 300px;
+  grid-template-rows: 250px;
 }
 
 .promo-bottom-title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   font-size: 35px;
   line-height: 48px;
+  margin-right: 169px;
 }
 
 .promo-bottom-subtitle {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   font-size: 14px;
   line-height: 19px;
+  margin-right: 79px
+}
+
+.promo-bottom-pic {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
 }
 
 /* Benefits */
@@ -106,16 +175,27 @@ img {
   color: var(--basic-white);
 }
 
+.benefits-list {
+  width: 1005px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .benefits-list-item {
+  width: 213px;
+  min-height: 165px;
   list-style: none;
 }
 
 .benefits-title {
+  text-align: center;
   font-size: 80px;
   line-height: 109px;
 }
 
 .benefits-subtitle {
+  text-align: center;
   font-size: 20px;
   line-height: 27px;
 }
@@ -123,9 +203,44 @@ img {
 
 /* Brands */
 
+.brands {
+  width: 1168px;
+  margin: 0 auto;
+}
+
 .brands-title {
+  text-align: center;
+  font-weight: 300;
   font-size: 35px;
   line-height: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #696969;
+}
+
+.brands-columns {
+  width: 988px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-bottom: 102px;
+}
+
+.brands-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brands-left-list {
+  list-style: none;
+}
+
+.brands-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brands-right-list {
+  list-style: none;
 }
 
 /* Footer */
@@ -133,6 +248,16 @@ img {
 .main-footer {
   background-color: var(--basic-black);
   color: var(--basic-white);
+  padding-top: 47px;
+}
+
+.footer-container {
+  width: 1168px;
+  margin: 0 auto;
+  padding-top: 27px;
+  border-top: 1px solid #696969;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-social-title {
@@ -166,6 +291,7 @@ img {
 }
 
 .footer-copyright {
+  text-align: center;
   font-size: 14px;
   line-height: 19px;
   opacity: 0.5;
@@ -174,30 +300,115 @@ img {
 /* Main Page end */
 
 .perfumes-catalog-title {
+  text-align: center;
+  font-weight: 300;
   font-size: 35px;
   line-height: 48px;
+}
+
+.perfumes-catalog-wrapper {
+  width: 1147px;
+  margin: 0 auto;
+}
+
+.perfumes-catalog-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.want-to-work-with-us {
+  background-image: url(../img/catalog_page/catalog_work_w_us_background.png);
+}
+
+.work-with-us-title {
+  font-size: 45px;
+  line-height: 61px;
+  padding-left: 238px;
+  padding-bottom: 42px;
+  color: var(--basic-gray);
+}
+
+.work-with-us-description {
+  width: 1134px;
+  font-size: 35px;
+  line-height: 47px;
+  padding-left: 238px;
+  padding-bottom: 50px;
+  color: var(--basic-gray);
 }
 
 /* Catalog Page end */
 
 .bois-brand-title {
+  text-align: center;
   font-size: 35px;
   line-height: 48px;
+}
+
+.bois-brand-wrapper {
+  width: 1101px;
+  margin: 0 auto;
+  padding-bottom: 66px;
+  display: flex;
+}
+
+.bois-brand-subtitle {
+  width: 554px;
+  margin-right: 54px;
+}
+
+.bois-brand-pic {
+  width: 489px;
+  height: 448px;
 }
 
 /* Bois Page end */
 
 .contacts-form-title {
+  text-align: center;
   text-transform: uppercase;
+  font-weight: 300;
   font-size: 35px;
   line-height: 48px;
+  margin-bottom: 69px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
+.form-wrapper {
+  width: 931px;
+  min-height: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.name-field,
+.email-field,
+.phone-field,
+.company-field {
+  box-sizing: border-box;
   width: 450px;
   height: 50px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.name-field,
+.phone-field {
+  margin-right: 27px;
+}
+
+.contacts-form-fieldset {
+  min-height: 203px;
+  margin-bottom: 34px;
+}
+
+.contacts-form-button {
+  color: var(--basic-black);
+  margin-bottom: 117px;
+  margin-left: 731px;
+  position: absolute;
+  right: 0;
 }
 
 .contacts-map {

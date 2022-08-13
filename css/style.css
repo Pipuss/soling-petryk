@@ -101,7 +101,15 @@ img {
 
 /* Main Gallery */
 
+.gallery-container {
+  width: 1612px;
+  margin: 0 auto;
+}
 
+.main-gallery-img {
+  width: 400px;
+  height: 400px;
+}
 
 /* Promo */
 
@@ -263,31 +271,105 @@ img {
 .footer-social-title {
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 22px;
 }
 
 .footer-social-phone {
+  min-width: 303;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer-social-phone::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  background: url(../img/svg/footer_phone_icon.svg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-social-mail {
+  min-width: 228px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer-social-mail::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 18px;
+  background-color: #fff;
+  background: url(../img/svg/footer_mail_icon.svg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-social-adress {
+  min-width: 277px;
+  vertical-align: bottom;
+  margin-bottom: 23px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer-social-adress::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 24px;
+  background-color: #fff;
+  background: url(../img/svg/footer_location_pin_icon.svg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer-social-inst {
+  min-width: 452px;
   font-size: 14px;
   line-height: 19px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer-social-inst::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  background: url(../img/svg/footer_instagram_icon.svg) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer-legal-title {
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 21px;
 }
 
 .footer-legal-subtitle {
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 19px;
 }
 
 .footer-legal-acc-number {
   font-size: 14px;
   line-height: 19px;
+  margin-bottom: 22px;
 }
 
 .footer-copyright {
@@ -386,7 +468,6 @@ img {
 .email-field,
 .phone-field,
 .company-field {
-  box-sizing: border-box;
   width: 450px;
   height: 50px;
   padding-left: 25px;

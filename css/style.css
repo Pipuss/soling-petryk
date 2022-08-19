@@ -77,13 +77,23 @@ img {
 /* Header */
 
 .main-header {
+  min-height: 110px;
   display: flex;
   justify-content: space-between;
+}
+
+.header-logo-pic:hover {
+  opacity: 0.7;
+}
+
+.header-logo-pic:active {
+  opacity: 1;
 }
 
 .main-nav-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 44px;
   margin-bottom: 66px;
@@ -93,6 +103,14 @@ img {
 .main-nav-list-item  a {
   margin-right: 30px;
   color: var(--basic-black);
+}
+
+.main-nav-list-item a:hover {
+  opacity: 0.5;
+}
+
+.main-nav-list-item a:active {
+  opacity: 1;
 }
 
 .main-nav-list-item:last-child {
@@ -114,69 +132,65 @@ img {
 /* Promo */
 
 .promo {
-  width: 1146px;
-  margin: 78px auto 47px auto;
+  width: 1410px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .promo-top {
-  display: grid;
-  grid-template-columns: 331px 373px 300px;
-  grid-template-rows: 250px;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 64px;
 }
 
 .promo-top-title {
-  margin-right: 60px;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  width: 331px;
   font-size: 35px;
-  line-height: 48px;
+  line-height: 47.5px;
+  font-weight: 300;
   margin-right: 60px;
+  align-self: flex-start;
 }
 
 .promo-top-subtitle {
-  margin-right: 73px;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  width: 373px;
   font-size: 14px;
   line-height: 19px;
+  margin-right: 76px;
 }
 
 .promo-top-pic {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  width: 300px;
+  height: 250px;
 }
 
 .promo-bottom {
-  display: grid;
-  grid-template-columns: 331px 373px 300px;
-  grid-template-rows: 250px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .promo-bottom-title {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  width: 219px;
   font-size: 35px;
-  line-height: 48px;
+  line-height: 47.5px;
+  font-weight: 300;
   margin-right: 169px;
 }
 
 .promo-bottom-subtitle {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  width: 373px;
   font-size: 14px;
   line-height: 19px;
-  margin-right: 79px
-}
-
-.promo-bottom-pic {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  margin-right: 79px;
 }
 
 /* Benefits */
 
 .benefits {
+  display: flex;
+  align-items: center;
+  min-height: 304px;
   background-image: url(../img/main_page/benefits_city_background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,25 +198,35 @@ img {
 }
 
 .benefits-list {
-  width: 1005px;
+  width: 1410px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .benefits-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 213px;
-  min-height: 165px;
   list-style: none;
 }
 
 .benefits-title {
+  width: 213px;
+  height: 100px;
+  display: block;
   text-align: center;
   font-size: 80px;
   line-height: 109px;
+  padding-bottom: 0;
 }
 
 .benefits-subtitle {
+  width: 213px;
+  display: block;
+  height: 63px;
   text-align: center;
   font-size: 20px;
   line-height: 27px;
@@ -228,14 +252,15 @@ img {
 .brands-columns {
   width: 988px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 102px;
 }
 
 .brands-left {
+  width: 434px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .brands-left-list {
@@ -243,8 +268,9 @@ img {
 }
 
 .brands-right {
+  width: 403px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .brands-right-list {
@@ -269,6 +295,7 @@ img {
 }
 
 .footer-social-title {
+  min-width: 177px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 22px;
@@ -296,8 +323,7 @@ img {
 }
 
 .footer-social-mail {
-  min-width: 228px;
-  padding-bottom: 18px;
+  width: 228px;
   padding-left: 30px;
   position: relative;
 }
@@ -310,13 +336,12 @@ img {
   background-color: #fff;
   background: url(../img/svg/footer_mail_icon.svg) no-repeat center;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
 .footer-social-adress {
   min-width: 277px;
-  vertical-align: bottom;
   margin-bottom: 23px;
   padding-left: 30px;
   position: relative;
@@ -330,7 +355,7 @@ img {
   background-color: #fff;
   background: url(../img/svg/footer_location_pin_icon.svg) no-repeat center;
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
 }
 
@@ -350,32 +375,59 @@ img {
   background-color: #fff;
   background: url(../img/svg/footer_instagram_icon.svg) no-repeat center;
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
 }
 
 .footer-legal-title {
+  min-width: 198px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 21px;
 }
 
 .footer-legal-subtitle {
+  min-width: 123px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 19px;
 }
 
 .footer-legal-acc-number {
+  min-width: 144px;
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 22px;
+}
+
+.footer-order-button {
+  display: block;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.footer-order-button:hover {
+  opacity: 1;
+  border-color: var(--basic-white);
+}
+
+.footer-order-button:active {
+  color: var(--basic-black);
+  border-color: var(--basic-black);
 }
 
 .footer-copyright {
   text-align: center;
   font-size: 14px;
   line-height: 19px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.footer-copyright:hover {
+  opacity: 1;
+}
+
+.footer-copyright:active {
   opacity: 0.5;
 }
 
@@ -386,11 +438,13 @@ img {
   font-weight: 300;
   font-size: 35px;
   line-height: 48px;
+  margin-bottom: 34px;
 }
 
 .perfumes-catalog-wrapper {
   width: 1147px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .perfumes-catalog-list {
@@ -398,15 +452,23 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.perfumes-catalog-item:hover {
+  opacity: 0.5;
 }
 
 .want-to-work-with-us {
+  min-height: 300px;
   background-image: url(../img/catalog_page/catalog_work_w_us_background.png);
+  background-position: center;
 }
 
 .work-with-us-title {
   font-size: 45px;
   line-height: 61px;
+  padding-top: 32px;
   padding-left: 238px;
   padding-bottom: 42px;
   color: var(--basic-gray);
@@ -422,6 +484,7 @@ img {
 }
 
 /* Catalog Page end */
+
 
 .bois-brand-title {
   text-align: center;
@@ -464,14 +527,35 @@ img {
   position: relative;
 }
 
+.contacts-form-form {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .name-field,
 .email-field,
 .phone-field,
 .company-field {
+  box-sizing: border-box;
   width: 450px;
   height: 50px;
   padding-left: 25px;
   margin-bottom: 30px;
+}
+
+.name-field:hover,
+.email-field:hover,
+.phone-field:hover,
+.company-field:hover {
+  opacity: 0.5;
+}
+
+.name-field:active,
+.email-field:active,
+.phone-field:active,
+.company-field:active {
+  border-color: var(--basic-black);
 }
 
 .name-field,
@@ -485,11 +569,23 @@ img {
 }
 
 .contacts-form-button {
+  font-family: "Roboto", "Arial", sans-serif;
+  display: block;
+  padding: 15px 59px;
+  text-align: center;
   color: var(--basic-black);
   margin-bottom: 117px;
-  margin-left: 731px;
   position: absolute;
   right: 0;
+}
+
+.contacts-form-button:hover {
+  opacity: 1;
+}
+
+.contacts-map-wrapper {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .contacts-map {

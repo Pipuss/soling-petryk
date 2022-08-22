@@ -33,7 +33,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: "OpenSans", "Arial" sans-serif;
   font-weight: 400;
@@ -54,6 +54,18 @@ a {
   color: #fff;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -72,6 +84,10 @@ img {
 
 .label {
   display: none;
+}
+
+.wrapper {
+  min-width: 100%;
 }
 
 /* Header */
@@ -119,9 +135,10 @@ img {
 
 /* Main Gallery */
 
-.gallery-container {
-  width: 1612px;
-  margin: 0 auto;
+.main-pic-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 78px;
 }
 
 .main-gallery-img {
@@ -198,47 +215,38 @@ img {
 }
 
 .benefits-list {
-  width: 1410px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 60px 80px;
 }
 
 .benefits-list-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 213px;
   list-style: none;
 }
 
 .benefits-title {
-  width: 213px;
-  height: 100px;
   display: block;
   text-align: center;
+  justify-content: flex-end;
   font-size: 80px;
   line-height: 109px;
   padding-bottom: 0;
 }
 
 .benefits-subtitle {
-  width: 213px;
   display: block;
-  height: 63px;
   text-align: center;
+  justify-content: flex-start;
   font-size: 20px;
   line-height: 27px;
 }
 
 
 /* Brands */
-
-.brands {
-  width: 1168px;
-  margin: 0 auto;
-}
 
 .brands-title {
   text-align: center;
@@ -249,33 +257,13 @@ img {
   border-bottom: 1px solid #696969;
 }
 
-.brands-columns {
-  width: 988px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-bottom: 102px;
+.brands-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 80px;
+  padding-bottom: 128px;
 }
 
-.brands-left {
-  width: 434px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.brands-left-list {
-  list-style: none;
-}
-
-.brands-right {
-  width: 403px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.brands-right-list {
-  list-style: none;
-}
 
 /* Footer */
 
@@ -286,8 +274,6 @@ img {
 }
 
 .footer-container {
-  width: 1168px;
-  margin: 0 auto;
   padding-top: 27px;
   border-top: 1px solid #696969;
   display: flex;
@@ -295,14 +281,12 @@ img {
 }
 
 .footer-social-title {
-  min-width: 177px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 22px;
 }
 
 .footer-social-phone {
-  min-width: 303;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 16px;
@@ -323,8 +307,8 @@ img {
 }
 
 .footer-social-mail {
-  width: 228px;
   padding-left: 30px;
+  padding-bottom: 23px;
   position: relative;
 }
 
@@ -341,7 +325,6 @@ img {
 }
 
 .footer-social-adress {
-  min-width: 277px;
   margin-bottom: 23px;
   padding-left: 30px;
   position: relative;
@@ -360,10 +343,10 @@ img {
 }
 
 .footer-social-inst {
-  min-width: 452px;
   font-size: 14px;
   line-height: 19px;
   padding-left: 30px;
+  padding-bottom: 27px;
   position: relative;
 }
 
@@ -380,21 +363,18 @@ img {
 }
 
 .footer-legal-title {
-  min-width: 198px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 21px;
 }
 
 .footer-legal-subtitle {
-  min-width: 123px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 19px;
 }
 
 .footer-legal-acc-number {
-  min-width: 144px;
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 22px;
@@ -442,8 +422,6 @@ img {
 }
 
 .perfumes-catalog-wrapper {
-  width: 1147px;
-  margin: 0 auto;
   margin-bottom: 100px;
 }
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Soling</title>
 </head>
 
@@ -64,8 +64,7 @@
     </section>
     <section class="contacts-map-wrapper">
       <h2 class="visually-hidden">Карта как нас найти</h2>
-      <img src="/img/contacts_page/contacts_map.png" class="contacts-map" width="1600" height="466"
-        alt="наше положение на карте">
+      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.6599595970615!2d37.625382216127115!3d55.71228220258362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b40a70e0f01%3A0x9ced91f3424a9708!2zUGF2bG92c2theWEgVWxpdHNhLCAyNyDRgdGC0YDQvtC10L3QuNC1IDMsIE1vc2t2YSwgT3Jvc3pvcnN6w6FnLCAxMTUwOTM!5e0!3m2!1shu!2shu!4v1661280817791!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="main-footer">
@@ -101,11 +100,13 @@
     </div>
     <p class="footer-copyright">2022 @ all right reserved</p>
   </footer>
-  <div class="contacts-pop-up">
-    <p class="pop-up-title">
+  <div class=" modal modal-map">
+    <img class="modal-map-pic" src="img/svg/modal-icon.svg" widht="100" height="100" alt="иконка в модальном окне">
+    <p class="modal-title">
       Спасибо за ваше обращение, в течение рабочего дня
       мы свяжемся с вами
     </p>
+    <button class="modal-close" aria-label="закрыть"></button>
   </div>
 </body>
 

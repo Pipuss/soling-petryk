@@ -31,6 +31,7 @@
   --basic-light-gray: #cccccc;
   --basic-dark-gray: #696969;
   --outline-color: #112311;
+  --transparent-black: rgba(0, 0, 0, 0.5);
 }
 
 /* Global */
@@ -112,13 +113,22 @@ img {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .wrapper {
   min-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+iframe {
+  display: block;
 }
 
 /* Header */
@@ -182,7 +192,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 78px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main-gallery-img {
@@ -356,8 +367,8 @@ img {
 .brands-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding-left: 80px;
   padding-bottom: 128px;
 }
@@ -386,6 +397,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 22px;
+  font-weight: 400;
 }
 
 .footer-social-phone,
@@ -441,6 +453,22 @@ img {
   background: url(../img/svg/footer_instagram_icon.svg) no-repeat 50% 100%;
 }
 
+.inst-link {
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.inst-link:last-of-type {
+  margin: 0;
+  padding: 0;
+  margin-right: 0;
+}
+
+.footer-legal-title {
+  font-weight: 400;
+}
+
 .footer-legal-title,
 .footer-legal-subtitle {
   font-size: 18px;
@@ -462,6 +490,7 @@ img {
   display: block;
   padding: 15px 20px;
   text-align: center;
+  background-color: transparent;
 }
 
 .footer-order-button:hover {
@@ -595,16 +624,13 @@ img {
   position: relative;
 }
 
-.contacts-form-form {
+.contacts-form {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-.name-field,
-.email-field,
-.phone-field,
-.company-field {
+.contacts-form input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 450px;
@@ -613,18 +639,15 @@ img {
   margin-bottom: 30px;
 }
 
-.name-field:hover,
-.email-field:hover,
-.phone-field:hover,
-.company-field:hover {
-  opacity: 0.5;
+.contacts-form input:hover {
+  color: var(--basic-black);
+  border-color: var(--transparent-black);
 }
 
-.name-field:active,
-.email-field:active,
-.phone-field:active,
-.company-field:active {
+.contacts-form input:focus {
+  outline: none;
   border-color: var(--basic-black);
+  color: var(--transparent-black);
 }
 
 .name-field,
@@ -639,17 +662,31 @@ img {
   position: relative;
 }
 
+.textarea-wrapper:hover {
+  border-color: var(--transparent-black);
+}
+
 .company-textarea {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 20px;
   min-height: 203px;
+}
+
+.company-textarea:focus {
+  outline-color: var(--transparent-black);
 }
 
 .company-textarea-label {
   position: absolute;
   top: 20px;
   left: 21px;
+}
+
+.textarea-wrapper:focus
+.company-textarea-label:focus {
+  outline-color: var(--transparent-black);
 }
 
 .contacts-form-button {
@@ -665,6 +702,8 @@ img {
 .contacts-form-button:hover {
   color: var(--basic-black);
   opacity: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, var(--basic-white)), to(var(--basic-gray)));
+  background-image: -o-linear-gradient(top, var(--basic-white) 55%, var(--basic-gray));
   background-image: linear-gradient(180deg, var(--basic-white) 55%, var(--basic-gray));
   border-color: var(--basic-gray);
 }

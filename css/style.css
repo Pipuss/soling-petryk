@@ -57,7 +57,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-black);
@@ -103,6 +103,7 @@ img {
   border: 1px solid var(--basic-dark-gray);
   color: var(--basic-white);
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -183,6 +184,10 @@ iframe {
   margin-right: 0;
 }
 
+.main-nav-list-link {
+  font-weight: 300;
+}
+
 /* Main Gallery */
 
 .main-pic-gallery {
@@ -208,6 +213,7 @@ iframe {
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-weight: 300;
 }
 
 .promo-top {
@@ -607,6 +613,13 @@ iframe {
 
 .contacts-form {
   margin-bottom: 177px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::placeholder {
+  color: var(--basic-black);
 }
 
 .contacts-form-title {
@@ -622,12 +635,6 @@ iframe {
   width: 932px;
   margin: 0 auto;
   position: relative;
-}
-
-.contacts-form {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 .contacts-form input {

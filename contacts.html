@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Soling</title>
 </head>
 
@@ -22,22 +22,22 @@
           <h2 class="visually-hidden">Основная навигация</h2>
           <ul class="main-nav-list">
             <li class="main-nav-list-item">
-              <a href="index.html" aria-label="Main">Главная</a>
+              <a class="main-nav-list-link" href="index.html" aria-label="Main">Главная</a>
             </li>
             <li class="main-nav-list-item">
-              <a href="bois.html" aria-label="Catalog">Профессиональная косметика</a>
+              <a class="main-nav-list-link" href="bois.html" aria-label="Catalog">Профессиональная косметика</a>
             </li>
             <li class="main-nav-list-item">
-              <a href="catalog.html" aria-label="Perfumes">Парфюмерия</a>
+              <a class="main-nav-list-link" href="catalog.html" aria-label="Perfumes">Парфюмерия</a>
             </li>
             <li class="main-nav-list-item">
-              <a href="#" aria-label="About">О компании</a>
+              <a class="main-nav-list-link" href="#" aria-label="About">О компании</a>
             </li>
             <li class="main-nav-list-item">
-              <a href="#" aria-label="Partners">Партнеры</a>
+              <a class="main-nav-list-link" href="#" aria-label="Partners">Партнеры</a>
             </li>
             <li class="main-nav-list-item">
-              <a href="contacts.html" aria-label="Contacts">Контакты</a>
+              <a class="main-nav-list-link" href="contacts.html" aria-label="Contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -49,18 +49,18 @@
         <div class="form-wrapper">
           <form class="contacts-form" method="get" action="#">
             <label class="label visually-hidden" for="name">Имя</label>
-            <input class="name-field" type="text" name="name-field" id="name" placeholder="Ваше имя">
+            <input class="name-field" type="text" name="name-field" id="name" placeholder="Ваше имя &#42;">
             <label class="label visually-hidden" for="email">Электронная почта</label>
-            <input class="email-field" type="email" name="email-field" id="email" placeholder="Email">
+            <input class="email-field" type="email" name="email-field" id="email" placeholder="Email &#42;">
             <label class="label visually-hidden" for="phone">Телефон</label>
-            <input class="phone-field" type="tel" name="tel-field" id="phone" placeholder="Телефон">
+            <input class="phone-field" type="tel" name="tel-field" id="phone" placeholder="Телефон &#42;">
             <label class="labe visually-hidden" for="company">Компания</label>
             <input class="company-field" type="text" name="company-field" id="company" placeholder="Компания">
             <div class="form-wrapper textarea-wrapper">
-              <textarea class="company-textarea" id="form-textarea" placeholder="Сообщение"></textarea>
-              <label for="form-textarea visually-hidden" class="company-textarea-label"></label>
+              <textarea class="company-textarea" id="form-textarea" placeholder="Сообщение &#42;"></textarea>
+              <label for="form-textarea" class="company-textarea-label visually-hidden"></label>
             </div>
-            <button type="submit" href="#" class="btn contacts-form-button modal-link">отправить</button>
+            <button type="submit" class="btn contacts-form-button modal-link">отправить</button>
           </form>
         </div>
       </section>
@@ -75,7 +75,7 @@
     <footer class="main-footer">
       <div class="footer-container container">
         <div class="footer-social-wrapper">
-          <h3 class="footer-social-title">Контакты компании</h3>
+          <p class="footer-social-title">Контакты компании</p>
           <p class="footer-social-phone">
             <a href="tel:84951092313" aria-label="call-to">8 (495) 109-23-13</a> доб.103, 104, 105;<br>
             <a href="tel:89256499834" aria-label="call-to">8 (925) 649-98-34</a>
@@ -96,7 +96,7 @@
           </p>
         </div>
         <div class="footer-legal-wrapper">
-          <h3 class="footer-legal-title">Юридические данные</h3>
+          <p class="footer-legal-title">Юридические данные</p>
           <p class="footer-legal-subtitle">
             ООО «Солинг»
           </p>
@@ -104,13 +104,13 @@
             ИНН 6722027595<br>
             ОГРН 1126722000591
           </p>
-          <button href="#" class="btn footer-order-button">Заказать звонок</button>
+          <button class="btn footer-order-button">Заказать звонок</button>
         </div>
       </div>
       <p class="footer-copyright">2022 @ all right reserved</p>
     </footer>
     <div class="modal modal-map visually-hidden">
-        <img class="modal-map-pic" src="img/svg/modal-icon.svg" widht="100" height="100" alt="иконка в модальном окне">
+        <img class="modal-map-pic" src="img/svg/modal-icon.svg" width="100" height="100" alt="иконка в модальном окне">
       <p class="modal-title">
         Спасибо за ваше обращение, в течение рабочего дня
         мы свяжемся с вами

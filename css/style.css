@@ -32,6 +32,7 @@
   --basic-dark-gray: #696969;
   --outline-color: #112311;
   --transparent-black: rgba(0, 0, 0, 0.5);
+  --basic-transparent: transparent;
 }
 
 /* Global */
@@ -204,6 +205,7 @@ iframe {
 .main-gallery-img {
   width: 25%;
   height: auto;
+  background-color: var(--basic-gray);
 }
 
 /* Promo */
@@ -267,6 +269,7 @@ iframe {
 .promo-top-pic {
   width: 300px;
   height: 250px;
+  background: var(--basic-gray);
 }
 
 .promo-bottom {
@@ -293,6 +296,10 @@ iframe {
   font-size: 14px;
   line-height: 19px;
   margin-right: 79px;
+}
+
+.promo-bottom-pic {
+  background-color: var(--basic-gray);
 }
 
 /* Benefits */
@@ -438,7 +445,7 @@ iframe {
   height: 24px;
   left: 0;
   top: 0;
-  background-color: transparent;
+  background-color: var(--basic-transparent);
   cursor: pointer;
 }
 
@@ -558,9 +565,12 @@ iframe {
 }
 
 .want-to-work-with-us {
-  min-height: 300px;
   background-image: url(../img/catalog_page/catalog_work_w_us_background.png);
   background-position: center;
+}
+
+.work-with-us-wrap {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.7) 100%);
 }
 
 .work-with-us-title {
@@ -607,6 +617,7 @@ iframe {
 .bois-brand-pic {
   width: 489px;
   height: 448px;
+  background-color: var(--basic-gray);
 }
 
 /* Bois Page end */
@@ -653,8 +664,8 @@ iframe {
 
 .contacts-form input:focus {
   outline: none;
-  border-color: var(--basic-black);
-  color: var(--transparent-black);
+  border-color: var(--transparent-black);
+  color: var(--basic-black);
 }
 
 .name-field,

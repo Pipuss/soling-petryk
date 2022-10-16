@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "OpenSans";
   src: url(../fonts/OpenSans-Regular.woff2),
@@ -578,6 +585,8 @@ iframe {
 }
 
 .work-with-us-wrap {
+  background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0.2) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(255,255,255,0.2)));
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.2) 100%);
 }
 
@@ -596,7 +605,7 @@ iframe {
   line-height: 47px;
   padding-left: 238px;
   padding-bottom: 50px;
-  color: var(--basic-white);
+  color: var(--basic-light-gray);
 }
 
 /* Catalog Page end */
@@ -636,6 +645,22 @@ iframe {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+::-moz-placeholder {
+  color: var(--basic-black);
+}
+
+:-ms-input-placeholder {
+  color: var(--basic-black);
+}
+
+::-ms-input-placeholder {
+  color: var(--basic-black);
 }
 
 ::placeholder {

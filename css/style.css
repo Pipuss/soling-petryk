@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "OpenSans";
   src: url(../fonts/OpenSans-Regular.woff2),
@@ -564,13 +571,23 @@ iframe {
   opacity: 0.5;
 }
 
+.perfumes-catalog-pic {
+  background-color: var(--basic-gray);
+}
+
+.perfumes-catalog-img {
+  background-color: var(--basic-transparent);
+}
+
 .want-to-work-with-us {
   background-image: url(../img/catalog_page/catalog_work_w_us_background.png);
   background-position: center;
 }
 
 .work-with-us-wrap {
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.7) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0.2) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(255,255,255,0.2)));
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0.2) 100%);
 }
 
 .work-with-us-title {
@@ -579,7 +596,7 @@ iframe {
   padding-top: 32px;
   padding-left: 238px;
   padding-bottom: 42px;
-  color: var(--basic-white);
+  color: var(--basic-light-gray);
 }
 
 .work-with-us-description {
@@ -588,7 +605,7 @@ iframe {
   line-height: 47px;
   padding-left: 238px;
   padding-bottom: 50px;
-  color: var(--basic-white);
+  color: var(--basic-light-gray);
 }
 
 /* Catalog Page end */
@@ -598,6 +615,7 @@ iframe {
   text-align: center;
   font-size: 35px;
   line-height: 48px;
+  font-weight: 300;
 }
 
 .bois-brand-wrapper {
@@ -627,6 +645,22 @@ iframe {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+::-moz-placeholder {
+  color: var(--basic-black);
+}
+
+:-ms-input-placeholder {
+  color: var(--basic-black);
+}
+
+::-ms-input-placeholder {
+  color: var(--basic-black);
 }
 
 ::placeholder {
@@ -680,16 +714,16 @@ iframe {
   position: relative;
 }
 
-.textarea-wrapper:hover {
-  border-color: var(--transparent-black);
-}
-
 .company-textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   padding: 20px;
   min-height: 203px;
+}
+
+.company-textarea:hover {
+  border: 2px solid var(--transparent-black);
 }
 
 .company-textarea:focus {
@@ -709,26 +743,27 @@ iframe {
 
 .contacts-form-button {
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
   display: block;
   padding: 15px 59px;
   text-align: center;
   color: var(--basic-black);
+  background: var(--basic-transparent);
   position: absolute;
   right: 0;
+  border-color: var(--basic-black);
 }
 
 .contacts-form-button:hover {
   color: var(--basic-black);
   opacity: 1;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, var(--basic-white)), to(var(--basic-gray)));
-  background-image: -o-linear-gradient(top, var(--basic-white) 55%, var(--basic-gray));
-  background-image: linear-gradient(180deg, var(--basic-white) 55%, var(--basic-gray));
   border-color: var(--basic-gray);
 }
 
 .contacts-form-button:active {
   background: none;
-  color: var(--basic-black);
+  color: var(--basic-dark-gray);
+  border-color: var(--basic-black);
 }
 
 .contacts-map-wrapper {
